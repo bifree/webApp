@@ -31,6 +31,11 @@ class User extends Authenticatable
         return config('pref.'.$this->pref_id);
     }
     
+    public function favorites()
+    {
+        return $this->belongsToMany(Post::class)->withTimestamps();
+    }
+    
     public function posts()
     {
         return $this->hasMany(Post::class);

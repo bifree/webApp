@@ -1,10 +1,5 @@
-@extends('layouts.app')
-
-@section('content')
-
-<div class="container-fluid">
-            <div class="layout overflow-hidden">
-            <nav class="navigation d-flex flex-column text-center navbar navbar-light hide-scrollbar">
+<div>
+                <nav class="navigation d-flex flex-column text-center navbar navbar-light hide-scrollbar">
             <a href></a>
             <ul class="d-flex nav navbar-nav flex-row flex-xl-column flex-grow-1 justify-content-between justify-content-xl-center" role="tablist">
                 <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-user-alt fa-2x"></i></a></li>
@@ -14,9 +9,8 @@
                 <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-cog fa-2x"></i></a></li>
                 <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-question-circle fa-2x"></i></a></li>
             </ul>
-            </nav>
             
-            <aside class="sidebar bg-light">
+                   <aside class="sidebar bg-light">
                 <div class="tab-content h-100" role="tablist">
                     
                     <!--Friends-->
@@ -207,22 +201,4 @@
                 </div>
                 </div>
             </aside>
-            
-            
-            <main class="main hide-scrollbar">
-                <div class="container h-100">
-                    <div class="d-flex flex-column justify-content-center text-center h-100">
-                        <div class="mb-5">
-                            <p class="text-muted">
-                                Pick a person from left menu, <br>
-                                and start your conversation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            
-        </div>
 </div>
-        
-@endsection

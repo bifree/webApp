@@ -13,6 +13,11 @@ class UsersController extends Controller
             ]);
     }
     
+    public function show()
+    {
+        return view('users.show');
+    }
+    
     public function followings($id)
     {
         $user = User::find($id);
