@@ -1,13 +1,13 @@
-@section('sidebar')
+@section('commons.sidebar')
 <div class="mainbox">
         <nav class="navigation d-flex flex-column text-center navbar navbar-light hide-scrollbar">
             <ul class="d-flex nav navbar-nav flex-row flex-xl-column flex-grow-1 justify-content-between justify-content-xl-center" role="tablist">
-                <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-user-alt fa-2x"></i></a></li>
-                <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-user-friends fa-2x"></i></a></li>
+                <li class="nav-item"><a href="{{ route('posts') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-user-alt fa-2x"></i></a></li>
+                <li class="nav-item"><a href="{{ route('create') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-user-friends fa-2x"></i></a></li>
                 <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-comments fa-2x"></i></a></li>
                 <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-search fa-2x"></i></a></li>
-                <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-cog fa-2x"></i></a></li>
-                <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-question-circle fa-2x"></i></a></li>
+                <li class="nav-item"><a href="{{ route('users.show') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-cog fa-2x"></i></a></li>
+                <li class="nav-item"><a href="{{ route('welcome') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-question-circle fa-2x"></i></a></li>
             </ul>
         </nav>
             
@@ -30,7 +30,7 @@
                                     <form action="">
                                         <div class="input-group">
                                             <div class="input-group-text">
-                                                
+                                                <i class="fas fa-search"></i>
                                             </div>
                                             <input type="text" class="form-control form-control-lg ps-0" placeholder="Search messages or users">
                                         </div>
@@ -42,7 +42,7 @@
                                         <div class="row gx-5">
                                             
                                             <!--Card-->
-                                            <a class="card border-0 text-reset" href="#">
+                                            <a class="card border-0 text-reset" href="{{ route('message') }}">
                                                 <div class="card-body">
                                                     <div class="row gx-5">
                                                         <div class="col-auto">
@@ -51,17 +51,17 @@
                                                             </div>
                                                             <div class="col">
                                                                 <div class="d-flex align-items-center mb-3">
-                                                                    <h5 class="me-auto mb-0">Online Chandler</h5>
+                                                                    <h5 class="me-auto mb-0">Syun Details</h5>
                                                                     <span class="text-muted extra-small ms-2">
                                                                         8:45 pm
                                                                     </span>
                                                                 </div>
                                                                 <div class="d-flex align-items-center">
                                                                     <div class="line-clamp me-auto message-body">
-                                                                        "Hello! I am Masaki, I am from Tokyo. I love ramen a lot. Do you? Let us eat togerther."
+                                                                        "Hi. Ofcourse I know her details. Syun is sometime like a beautiful summer girl, she likes sun."
                                                                     </div>
                                                                     <div class="badge badge-circle bg-primary ms-5">
-                                                                        <span>3</span>
+                                                                        <span>0</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -80,7 +80,36 @@
                                                             </div>
                                                             <div class="col">
                                                                 <div class="d-flex align-items-center mb-3">
-                                                                    <h5 class="me-auto mb-0">Online Chandler</h5>
+                                                                    <h5 class="me-auto mb-0">Maru Chan</h5>
+                                                                    <span class="text-muted extra-small ms-2">
+                                                                        8:45 pm
+                                                                    </span>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="line-clamp me-auto message-body">
+                                                                        "Hello! I am Yuko, who is mizu mizu c. Mizu mizu c means juicy."
+                                                                    </div>
+                                                                    <div class="badge badge-circle bg-primary ms-5">
+                                                                        <span>3</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            
+                                            <!--Card-->
+                                            <a class="card border-0 text-reset" href="#">
+                                                <div class="card-body">
+                                                    <div class="row gx-5">
+                                                        <div class="col-auto">
+                                                            <div class="avatar avatar-online">
+                                                                <img class="avatar-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZpjjMkaU_EMfnPEZx_kgOns21wsmFKtHmw&usqp=CAU">
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="d-flex align-items-center mb-3">
+                                                                    <h5 class="me-auto mb-0">Mizu mizu C Yuko</h5>
                                                                     <span class="text-muted extra-small ms-2">
                                                                         8:45 pm
                                                                     </span>
@@ -109,43 +138,14 @@
                                                             </div>
                                                             <div class="col">
                                                                 <div class="d-flex align-items-center mb-3">
-                                                                    <h5 class="me-auto mb-0">Online Chandler</h5>
+                                                                    <h5 class="me-auto mb-0">f-on Coffee</h5>
                                                                     <span class="text-muted extra-small ms-2">
                                                                         8:45 pm
                                                                     </span>
                                                                 </div>
                                                                 <div class="d-flex align-items-center">
                                                                     <div class="line-clamp me-auto message-body">
-                                                                        "Hello! I am Masaki, I am from Tokyo. I love ramen a lot. Do you? Let us eat togerther."
-                                                                    </div>
-                                                                    <div class="badge badge-circle bg-primary ms-5">
-                                                                        <span>3</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            
-                                            <!--Card-->
-                                            <a class="card border-0 text-reset" href="#">
-                                                <div class="card-body">
-                                                    <div class="row gx-5">
-                                                        <div class="col-auto">
-                                                            <div class="avatar avatar-online">
-                                                                <img class="avatar-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZpjjMkaU_EMfnPEZx_kgOns21wsmFKtHmw&usqp=CAU">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="d-flex align-items-center mb-3">
-                                                                    <h5 class="me-auto mb-0">Online Chandler</h5>
-                                                                    <span class="text-muted extra-small ms-2">
-                                                                        8:45 pm
-                                                                    </span>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="line-clamp me-auto message-body">
-                                                                        "Hello! I am Masaki, I am from Tokyo. I love ramen a lot. Do you? Let us eat togerther."
+                                                                        "How could you achieve 500 subscribers in your YouTube?"
                                                                     </div>
                                                                     <div class="badge badge-circle bg-primary ms-5">
                                                                         <span>3</span>

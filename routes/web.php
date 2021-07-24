@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TopController@index')->name('welcome');
 
 Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup');
 Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
@@ -27,13 +25,19 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 //ユーザー情報に関するルーティング
 Route::get('users/{id}', 'UsersController@show');
+Route::get('show','UsersController@show')->name('users.show');
 
 //投稿に関するルーティング
-Route::get('posts', 'PostsController@index');
-Route::get('posts/create', 'PostsController@create');
-Route::get('posts/edit', 'PostsController@update')->name('posts.edit');
-Route::get('posts/delete', 'PostsController@destroy')->name('posts.delete');
+Route::get('posts', 'PostsController@index')->name('posts');
+Route::get('/create','PostsController@create')->name('create');
+Route::post('/store','PostsController@store')->name('posts.store');
+Route::get('/edit','PostsController@edit')->name('posts.edit');
+Route::put('/update','PostsController@update')->name('posts.update');
+Route::delete('/destroy','PostsController@destroy')->name('posts.destroy');
 
 //いいね機能に関するルーティング
 Route::post('favorites','FavoriteController@store')->name('favorites');
 Route::post('unfavorites','FavoriteController@destroy')->name('unfavorites');
+
+//メッセージに関するルーティング
+Route::get('/message','MessagesController@index')->name('message');

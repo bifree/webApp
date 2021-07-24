@@ -1,5 +1,5 @@
-.green {
-    background: green;
+.blue {
+    background: rgba(0, 179, 255, 0.906);
 }
 
 .btn-green {
@@ -10,4 +10,38 @@
 .btn-green:hover {
     background-color: rgba(0,198,198,0.8);
     color: white;
+}
+
+.messagebox {
+    margin: 0 auto;
+}
+
+.messagetab {
+    line-height: 1.6;
+    color: #a0b3ce;
+    background-color: #ebf1f7;
+    background-clip: padding-box;
+    padding: .875rem 1.125rem;
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    font-size: .9rem;
+}
+
+.messagetab-b {
+    line-height: 1.6;
+    color: #a0b3ce;
+    background-color: #ebf1f7;
+    background-clip: padding-box;
+    padding: .875rem 1.125rem;
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+    border-bottom-left-radius: .8rem;
+    font-size: .9rem;
+    float: right;
+}
+
+.bms_clear {
+        clear: both; /* 左メッセージと右メッセージの回り込み(float)の効果の干渉を防ぐために必要（これが無いと、自分より下のメッセージにfloatが影響する） */
+
 }

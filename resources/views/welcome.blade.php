@@ -2,9 +2,9 @@
 
 @section('content')
 
-    <div class="center jumbotron green">
+    <div class="center jumbotron blue">
 
-        <div class="text-center text-white green">
+        <div class="text-center text-white">
             <h1>Bifree Application</h1>
         </div>
 

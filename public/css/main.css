@@ -35,6 +35,7 @@
 .main {
     position: relative;
     flex: 1;
+    height: auto;
 }
 
 .h-100 {
@@ -183,15 +184,16 @@ textarea.form-control {
 }
 
 .mainbox {
-    height: 100%;
+    height: auto;
     font-size: 15px;
     display: flex;
-}
-
-.mainbar {
-    max-width: 1080px;
 }
 
 .sidebar {
     width: 530px;
 }
+
+.post-card {
+    margin: 0 auto;
+}
+
