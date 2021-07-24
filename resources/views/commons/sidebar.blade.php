@@ -1,5 +1,5 @@
-<div class="container-fluid">
-    <div class="layout overflow-hidden">
+@section('sidebar')
+<div class="mainbox">
         <nav class="navigation d-flex flex-column text-center navbar navbar-light hide-scrollbar">
             <ul class="d-flex nav navbar-nav flex-row flex-xl-column flex-grow-1 justify-content-between justify-content-xl-center" role="tablist">
                 <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-user-alt fa-2x"></i></a></li>
@@ -168,4 +168,4 @@
         </aside>
             
     </div>
-</div>
+@show

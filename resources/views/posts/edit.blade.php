@@ -1,191 +1,32 @@
 @extends('layouts.app')
 
 @section('content')
-
-<div class="container-fluid">
-    <div class="layout overflow-hidden">
-        <nav class="navigation d-flex flex-column text-center navbar navbar-light hide-scrollbar">
-            <ul class="d-flex nav navbar-nav flex-row flex-xl-column flex-grow-1 justify-content-between justify-content-xl-center" role="tablist">
-                <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-user-alt fa-2x"></i></a></li>
-                <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-user-friends fa-2x"></i></a></li>
-                <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-comments fa-2x"></i></a></li>
-                <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-search fa-2x"></i></a></li>
-                <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-cog fa-2x"></i></a></li>
-                <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-question-circle fa-2x"></i></a></li>
-            </ul>
-        </nav>
-            
-        <aside class="sidebar bg-light">
-                <div class="tab-content h-100" role="tablist">
-                    
-                    <!--Friends-->
-                    <div class="tab-pane fade h-100">
-                        
-                    </div>
-                    <!--Chats-->
-                    <div class="tab-pane fade h-100 show active">
-                    <div class="d-flex flex-column h-100 position-relative">
-                        <div class="hide-scrollbar">
-                            <div class="container py-8">
-                                <div class="mb-6">
-                                    <h2>Chats</h2>
-                                </div>
-                                <div class="mb-6">
-                                    <form action="">
-                                        <div class="input-group">
-                                            <div class="input-group-text">
-                                                <i class="fas fa-search"></i>
-                                            </div>
-                                            <input type="text" class="form-control form-control-lg ps-0" placeholder="Search messages or users">
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="card-list">
-                                    <a class="card border-0 text-right">
-                                    <div class="card-body">
-                                        <div class="row gx-5">
-                                            
-                                            <!--Card-->
-                                            <a class="card border-0 text-reset" href="#">
-                                                <div class="card-body">
-                                                    <div class="row gx-5">
-                                                        <div class="col-auto">
-                                                            <div class="avatar avatar-online">
-                                                                <img class="avatar-img" src="https://images.rollingstonejapan.com/articles/34000/34460/415x850/15cd1debb9aaf0eb62d2fde0f5bb7f77.jpg">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="d-flex align-items-center mb-3">
-                                                                    <h5 class="me-auto mb-0">Online Chandler</h5>
-                                                                    <span class="text-muted extra-small ms-2">
-                                                                        8:45 pm
-                                                                    </span>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="line-clamp me-auto message-body">
-                                                                        "Hello! I am Masaki, I am from Tokyo. I love ramen a lot. Do you? Let us eat togerther."
-                                                                    </div>
-                                                                    <div class="badge badge-circle bg-primary ms-5">
-                                                                        <span>3</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            
-                                            <!--Card-->
-                                            <a class="card border-0 text-reset" href="#">
-                                                <div class="card-body">
-                                                    <div class="row gx-5">
-                                                        <div class="col-auto">
-                                                            <div class="avatar avatar-online">
-                                                                <img class="avatar-img" src="https://pbs.twimg.com/profile_images/1078678861909417985/zGab98bo_400x400.jpg">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="d-flex align-items-center mb-3">
-                                                                    <h5 class="me-auto mb-0">Online Chandler</h5>
-                                                                    <span class="text-muted extra-small ms-2">
-                                                                        8:45 pm
-                                                                    </span>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="line-clamp me-auto message-body">
-                                                                        "Hello! I am Masaki, I am from Tokyo. I love ramen a lot. Do you? Let us eat togerther."
-                                                                    </div>
-                                                                    <div class="badge badge-circle bg-primary ms-5">
-                                                                        <span>3</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            
-                                            <!--Card-->
-                                            <a class="card border-0 text-reset" href="#">
-                                                <div class="card-body">
-                                                    <div class="row gx-5">
-                                                        <div class="col-auto">
-                                                            <div class="avatar avatar-online">
-                                                                <img class="avatar-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZpjjMkaU_EMfnPEZx_kgOns21wsmFKtHmw&usqp=CAU">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="d-flex align-items-center mb-3">
-                                                                    <h5 class="me-auto mb-0">Online Chandler</h5>
-                                                                    <span class="text-muted extra-small ms-2">
-                                                                        8:45 pm
-                                                                    </span>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="line-clamp me-auto message-body">
-                                                                        "Hello! I am Masaki, I am from Tokyo. I love ramen a lot. Do you? Let us eat togerther."
-                                                                    </div>
-                                                                    <div class="badge badge-circle bg-primary ms-5">
-                                                                        <span>3</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            
-                                            <!--Card-->
-                                            <a class="card border-0 text-reset" href="#">
-                                                <div class="card-body">
-                                                    <div class="row gx-5">
-                                                        <div class="col-auto">
-                                                            <div class="avatar avatar-online">
-                                                                <img class="avatar-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZpjjMkaU_EMfnPEZx_kgOns21wsmFKtHmw&usqp=CAU">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="d-flex align-items-center mb-3">
-                                                                    <h5 class="me-auto mb-0">Online Chandler</h5>
-                                                                    <span class="text-muted extra-small ms-2">
-                                                                        8:45 pm
-                                                                    </span>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="line-clamp me-auto message-body">
-                                                                        "Hello! I am Masaki, I am from Tokyo. I love ramen a lot. Do you? Let us eat togerther."
-                                                                    </div>
-                                                                    <div class="badge badge-circle bg-primary ms-5">
-                                                                        <span>3</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+<div>
+    <div class="d-flexbox flex-column align-items-center mt-5">
+        <div class="col-xl-5 col-lg-8 col-md-10 col-sm-11 post-card">
+            <div class="card mb-5">
+                <div class="card-header">
+                    投稿の新規作成
+                </div>
+                <div class="card-body">
+                    <form class="upload" method="POST">
+                        {{ csrf_field() }}
+                        <div class="md-form">
+                            <label>タイトル</label>
+                            <input type="text" placeholder="タイトル" class="form-control">
                         </div>
-                    </div>
+                        <div class="form-group mt-2">
+                            <label>本文</label>
+                            <textarea name="message" class="form-control" id=""></textarea>
+                        </div>
+                        <div class="text-center">
+                            <input type="text" class="btn btn-primary" value="更新する">
+                            <input type="text" class="btn btn-danger" value="削除する">
+                        </div>
+                    </form>
                 </div>
             </div>
-        </aside>
-            
-            
-        <main class="main hide-scrollbar">
-            <div class="container h-100">
-                <div class="d-flex flex-column justify-content-center text-center h-100">
-                    <div class="mb-5">
-                        <p class="text-muted">
-                            Pick a person from left menu, <br>
-                            and start your conversation.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </main>
-            
+        </div>
     </div>
 </div>
-        
 @endsection

@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div>
-    <div class="d-flex flex-column align-items-center mt-5">
+    <div class="d-flexbox flex-column align-items-center mt-5">
         <div class="col-xl-5 col-lg-8 col-md-10 col-sm-11 post-card">
             <div class="card mb-5">
                 <div class="card-header">
@@ -29,5 +28,4 @@
         </div>
     </div>
 </div>
-
 @endsection

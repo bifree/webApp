@@ -14,11 +14,17 @@
 
     <body class="hide-scrollbar">
 
-    @include('commons.header')
-
+    @include('commons.header')        
     @include('commons.error_messages')
-
-    @yield('content')
+    
+    <div class="row">
+        <div class="sidebar">
+            @include('commons.sidebar')
+        </div>
+    <div class="mainbar main">
+        @yield('content')
+    </div>
+    </div>
 
     @include('commons.footer')
 

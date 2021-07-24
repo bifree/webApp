@@ -177,3 +177,21 @@ a:hover {
 textarea.form-control {
     height: 10rem;
 }
+
+.d-flexbox {
+    display: flexbox;
+}
+
+.mainbox {
+    height: 100%;
+    font-size: 15px;
+    display: flex;
+}
+
+.mainbar {
+    max-width: 1080px;
+}
+
+.sidebar {
+    width: 530px;
+}
