@@ -28,12 +28,12 @@
                     <input type="email" name="email" class="form-control">
                 </div>
                 
-                 <label>お住まいの都道府県</label>
-                 <select class="form-group form-control" name="address">
+                <label>お住まいの都道府県</label>
+                <select class="form-group form-control" name="address">
                     @foreach(config('prefecture') as $pref_id => $name)
                     <option value="{{ $pref_id }}">{{ $name }}</option>
                     @endforeach
-                 </select>
+                </select>
 
                 <div class="form-group">
                     <label>パスワード</label>

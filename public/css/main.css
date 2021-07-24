@@ -71,6 +71,9 @@
 
 .form-control-lg {
     border-radius: .8rem;
+    padding: .875rem 1.125rem;
+    font-size: .9375rem;
+    border-radius: .8rem;
 }
 
 .sidebar {
@@ -130,6 +133,7 @@
 html, body, .layout {
     height: 100%;
     overflow-x: hidden!important;
+    font-size: 15px;
 }
 
 .hide-scrollbar {
@@ -149,4 +153,27 @@ a:hover {
 
 .flex-column {
     flex-direction: column!important;
+}
+
+.input-group-text {
+    align-items: center;
+    padding: .6rem 1.1rem;
+    font-size: .95rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #a0b3ce;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #ebf1f7;
+    border: 2px solid #ebf1f7;
+    border-top-left-radius: .8rem;
+    border-bottom-left-radius: .8rem;
+}
+
+.card {
+    border-radius: .8rem;
+}
+
+textarea.form-control {
+    height: 10rem;
 }

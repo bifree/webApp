@@ -2,40 +2,32 @@
 
 @section('content')
 
-    <div class="center jumbotron green">
-
-        <div class="text-center text-white green">
-            <h1>Bifree Application</h1>
-        </div>
-
-    </div>
-
-    <div class="text-center">
-        <h2 class="login_title text-left d-inline-block mt-2">Sample</h2>
-        
-        <div>
-            <a href=""><div class="btn btn-primary">記事を投稿する</div></a>
-        </div>
-        
-        <div>
-            <div class="mt-5 d-flex justify-content-center">
-                <div class="col-8">
-                     <label>Title</label>
-                     <input class="mb-2 form-control">
+<div>
+    <div class="d-flex flex-column align-items-center mt-5">
+        <div class="col-xl-5 col-lg-8 col-md-10 col-sm-11 post-card">
+            <div class="card mb-5">
+                <div class="card-header">
+                    投稿の新規作成
                 </div>
-            </div>
-            <div class="mt-2 d-flex justify-content-center">
-                <div class="col-8">
-                     <label>Text</label>
-                     <textarea class="form-control" column="40"></textarea>
+                <div class="card-body">
+                    <form class="upload" method="POST">
+                        {{ csrf_field() }}
+                        <div class="md-form">
+                            <label>タイトル</label>
+                            <input type="text" placeholder="タイトル" class="form-control">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label>本文</label>
+                            <textarea name="message" class="form-control" id=""></textarea>
+                        </div>
+                        <div class="text-center">
+                            <input type="text" class="btn btn-green w-25" value="投稿する">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        </div>
-        <div class="mt-5 text-right col-10">
-            <a href="{ route('postsl.edit') }}"><div class="btn btn-primary">編集する</div></a>
-            <a href="{ route('posts.delete') }}"><div class="btn btn-danger">削除する</div></a>
-        </div>
     </div>
-    
+</div>
+
 @endsection

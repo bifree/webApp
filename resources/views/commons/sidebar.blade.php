@@ -1,6 +1,6 @@
-<div>
-                <nav class="navigation d-flex flex-column text-center navbar navbar-light hide-scrollbar">
-            <a href></a>
+<div class="container-fluid">
+    <div class="layout overflow-hidden">
+        <nav class="navigation d-flex flex-column text-center navbar navbar-light hide-scrollbar">
             <ul class="d-flex nav navbar-nav flex-row flex-xl-column flex-grow-1 justify-content-between justify-content-xl-center" role="tablist">
                 <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-user-alt fa-2x"></i></a></li>
                 <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-user-friends fa-2x"></i></a></li>
@@ -9,8 +9,9 @@
                 <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-cog fa-2x"></i></a></li>
                 <li class="nav-item"><a href="{{ route('posts.edit') }}" class="nav-link py-0 py-lg-8"><i class="fas fa-question-circle fa-2x"></i></a></li>
             </ul>
+        </nav>
             
-                   <aside class="sidebar bg-light">
+        <aside class="sidebar bg-light">
                 <div class="tab-content h-100" role="tablist">
                     
                     <!--Friends-->
@@ -27,12 +28,12 @@
                                 </div>
                                 <div class="mb-6">
                                     <form action="">
-                                       <div class="input-group">
+                                        <div class="input-group">
                                             <div class="input-group-text">
-                                                 
+                                                
                                             </div>
                                             <input type="text" class="form-control form-control-lg ps-0" placeholder="Search messages or users">
-                                       </div>
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="card-list">
@@ -69,7 +70,6 @@
                                                 </div>
                                             </a>
                                             
-                                            
                                             <!--Card-->
                                             <a class="card border-0 text-reset" href="#">
                                                 <div class="card-body">
@@ -98,7 +98,6 @@
                                                     </div>
                                                 </div>
                                             </a>
-                                            
                                             
                                             <!--Card-->
                                             <a class="card border-0 text-reset" href="#">
@@ -128,36 +127,6 @@
                                                     </div>
                                                 </div>
                                             </a>
-                                                                                        
-                                            <!--Card-->
-                                            <a class="card border-0 text-reset" href="#">
-                                                <div class="card-body">
-                                                    <div class="row gx-5">
-                                                        <div class="col-auto">
-                                                            <div class="avatar avatar-online">
-                                                                <img class="avatar-img" src="https://pbs.twimg.com/profile_images/1078678861909417985/zGab98bo_400x400.jpg">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="d-flex align-items-center mb-3">
-                                                                    <h5 class="me-auto mb-0">Online Chandler</h5>
-                                                                    <span class="text-muted extra-small ms-2">
-                                                                        8:45 pm
-                                                                    </span>
-                                                                </div>
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="line-clamp me-auto message-body">
-                                                                        "Hello! I am Masaki, I am from Tokyo. I love ramen a lot. Do you? Let us eat togerther."
-                                                                    </div>
-                                                                    <div class="badge badge-circle bg-primary ms-5">
-                                                                        <span>3</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            
                                             
                                             <!--Card-->
                                             <a class="card border-0 text-reset" href="#">
@@ -190,15 +159,13 @@
                                             
                                         </div>
                                     </div>
-                                    <div class="card-footer">
-                                        
-                                    </div>
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
-            </aside>
+            </div>
+        </aside>
+            
+    </div>
 </div>
